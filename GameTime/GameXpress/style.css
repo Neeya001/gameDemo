@@ -1,0 +1,217 @@
+/* CSS Reset */
+*{
+    padding:0px;
+    margin:0px;
+    font-family: cursive;
+}
+/* Navbar  */
+/* Header */
+#navbar{
+    display:flex;
+    align-items:center;
+    position: relative;
+    top:0px;
+}
+
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    content:"";
+    background-color:#262626;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+}
+#navbar ul li{
+    list-style:none;
+    font-size:1.7rem;
+}
+#navbar ul li a{
+   display:block;
+   padding:20px 29px;
+   border-radius:20px;
+   color:white;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:rgb(166, 152, 43);
+    text-decoration: underline;
+}
+
+#login a{
+    position: absolute;
+    right:40px;
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:5px 200px;
+    height: 785px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    /* background: url('../gamers.jpg') no-repeat center center/cover; */
+    background: url('images/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    z-index:-1;
+    /* opacity: 0.8; */
+} 
+#home h1{
+    color: white;
+    text-align: center;
+    font-size:70px;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+.gameColor,.heading_second {
+    font-size:70px;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00f3, #0033ff, #ff00c4,#ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+    animation : animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+/* Games */
+
+#games{
+    margin:20px;
+    display:inline;
+    align-items: center;
+    
+}
+#games .box{
+    background-color: #b6943e4d;
+    border:4px solid brown; 
+    width:1300px;
+    height: 500px;
+     margin:20px 20px;
+    border-radius:20px; 
+    position: relative;
+    left:150px;
+    text-align:right;
+}
+.game_img{  
+    /* border:2px solid brown; */
+    
+    display: inline;
+    float:left;
+    align-content: center;
+    /* position: absolute;
+    left:10px; */
+    width: 490px;
+    height: 475px;
+    margin-right: 20px;
+    
+}  
+.center p{
+    font-size: 30px;
+    text-align: right;
+
+}
+.heading_second{
+    font-size:40px;
+    color:rgb(181, 167, 57);
+}  
+
+/* --Contact Section-- */
+#contact{
+    height:340px;
+}
+#contact_me{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact_me img{
+    height:60px;
+}
+.contact_img{
+    padding:10px;
+}
+.contact_img img:hover{
+    transform:rotateX(180deg);
+}
+#contact::before{
+    content:"";
+    position: relative;
+    width:100%;
+    height: 30%;
+    z-index:-1;
+}
+.contact_form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contact_form input{
+    height: 36px;
+    width: 344px;
+    margin:5px ;
+}
+.heading_first{
+    color:black;
+    text-decoration: underline;
+    font-size:3.1rem;
+    padding:15px;
+
+}
+.heading_second center{
+    font-size:3.1rem;
+    padding:15px;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    border-radius:13px;
+    background-color: #b5bf4f;
+    margin:20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn a{
+    color:white;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(181, 171, 81);
+    width:30%;
+}
+.btn1{
+    position:relative;
+    right: 150px;
+}
+/* #btn_contact{
+    text-decoration: none;
+    color:black; */
+
+.center{
+    text-align: center;
+}
+/* ---END---- */

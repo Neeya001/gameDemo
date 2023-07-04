@@ -1,0 +1,129 @@
+body{
+            
+    background-image: url("../memory_game_img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%  110%;
+    margin : 0;
+    text-align :center;
+    font-family : cursive;
+}
+h1{
+    color:beige;
+    font-size : 30px;
+    font-weight : bold;
+}
+#board{
+    height: 400px;
+    width : 300px;
+    margin : 74px auto;
+    background-color :rgb(17, 17, 17);
+    border : 10px solid black;
+    display : flex;
+    flex-wrap : wrap;
+
+}
+.card{
+   height : 90px;
+   width : 90px;
+   /* margin : 5px; */
+   /* background-color:rgb(148, 70, 70); */
+   border : 5px solid black; 
+}
+
+.card:hover{
+    border : 5px solid rgba(0, 34, 255, 0.414);
+}
+ .icon{
+    display : inline;
+    margin : 3px;
+}
+#home-icon{
+    position:absolute;
+    left : 0px;
+    top : 77px;
+    cursor: pointer;
+}
+#restart-icon{
+    position:absolute;
+    left : 50px;
+    top : 77px;
+    cursor : pointer;
+} 
+#music-icon-on{
+    position:absolute;
+    left : 100px;
+    top : 77px;
+    cursor : pointer;
+}
+#music-icon-off{
+    position:absolute;
+    left : 150px;
+    top : 77px;
+    cursor : pointer;
+}
+    #home-icon::before {
+        border : 2px solid #81ff00d4;
+        background-color: black;
+        width: 300px;
+    padding: 4px;
+    margin: 20px;
+        content: "Click if you want to exit...";
+        display : none;
+        position: absolute;
+        top:50px;
+        color: yellow;
+      }
+      #home-icon:hover::before {
+        display: block;
+      }
+      #restart-icon::before {
+        border : 2px solid #81ff00d4;
+        background-color: black;
+        width: 300px;
+    padding: 4px;
+    margin: 20px;
+        content: "Click if you want to restart the game..";
+        display : none;
+        position: absolute;
+        top:50px;
+        color: yellow;
+      }
+      
+      #restart-icon:hover::before {
+        display: block;
+      }
+      #music-icon-on::before {
+        border : 2px solid #81ff00d4;
+        background-color: black;
+        width: 300px;
+    padding: 4px;
+    margin: 20px;
+        content: "Click if you want to play the music..";
+        display : none;
+        position: absolute;
+        top:50px;
+        color: yellow;
+      }
+      
+      #music-icon-on:hover::before {
+        display: block;
+      }
+      #music-icon-off::before {
+        border : 2px solid #81ff00d4;
+        background-color: black;
+        width: 300px;
+    padding: 4px;
+    margin: 20px;
+        content: "Click if you want to stop the music..";
+        display : none;
+        position: absolute;
+        top:50px;
+        color: yellow;
+      }
+      
+      #music-icon-off:hover::before {
+        display: block;
+      }
+      
+
+    
